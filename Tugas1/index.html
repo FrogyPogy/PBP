@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+
+<body>
+  <div class="container">
+    
+    <form id="form" name="myForm" action="/action_page.php" onsubmit="return validasi()" method="post">
+      <h1>Log In</h1>
+      <div class="input-control">
+        Name: <input type="text" name="fname"><br>
+      </div>
+      
+      <div class="input-control">
+        Email: <input type="text" name="femail"><br>
+      </div>
+
+      <div class="input-control">
+        Password: <input type="password" name="fpass" id="psw"><br>
+      </div>
+
+      <div>
+        Show: <input type="checkbox" onclick="showpass()">
+      </div>
+
+      <button type="submit">Masuk</button>
+    </form>
+  </div>
+
+  <script src="project.js"></script>
+</body>
+
+</html>
