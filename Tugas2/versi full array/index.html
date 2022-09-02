@@ -1,0 +1,58 @@
+<!-- 
+  Nama Anggota Kelompok:
+  - Muhammad Farkhan Adhitama - 24060120120175
+  - Muhammad Akmal Firmansyah - 24060120140055
+  - Jonathan Henock Alexander Manik  - 24060120130112
+  - Najib Rifai Indrayanto - 24060120140082
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+
+<body>
+  <?php //echo "Hello world"
+  $Numberr = 200;
+  ?>
+  <button onclick="document.getElementById('id01').style.display='block'" class="signin" style="width:auto;">Sign In</button>
+  
+  <div id="id01" class="modal">
+    
+  <div class="container">
+    
+  
+    <form id="form" name="myForm" action="/action_page.php" onsubmit="return validasi()" method="post">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <h1>Log In</h1>
+      <div class="input-control">
+        Name: <input type="text" name="fname"><br>
+      </div>
+      
+      <div class="input-control">
+        Email: <input type="text" name="femail"><br>
+      </div>
+
+      <div class="input-control">
+        Password: <input type="password" name="fpass" id="psw"><br>
+      </div>
+
+      <div>
+        Show: <input type="checkbox" onclick="showpass()">
+      </div>
+
+      <button type="submit">Masuk</button>
+    </form>
+  </div>
+
+  <script src="project.js"></script>
+</body>
+
+</html>
